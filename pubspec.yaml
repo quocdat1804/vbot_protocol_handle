@@ -1,0 +1,35 @@
+name: vbot_protocol_handle
+description: "Demo vbot_protocol_handle"
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  protocol_handler: ^0.2.0
+  windows_single_instance: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  msix: ^3.16.6
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: VBot Protocol
+  publisher_display_name: VPM
+  identity_name: 234433VPM.VBot
+  msix_version: 1.2.0.0
+  logo_path: C:\Users\Administrator\Documents\GitHub\vbot_desktop\assets\images\logo_vi.png
+  capabilities: internetClient, microphone
+  store: false
+  protocol_activation: vbotprotocol
